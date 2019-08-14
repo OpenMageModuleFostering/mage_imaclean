@@ -9,6 +9,10 @@
  */
 class Defcon2_Imaclean_Adminhtml_ImacleanController extends Mage_Adminhtml_Controller_Action {
 
+    protected function _isAllowed() {
+        return Mage::getSingleton('admin/session')->isAllowed('admin/system/d2imaclean');
+    }
+
     protected function _initAction() {
         $this->loadLayout()
             ->_setActiveMenu('defcon2imaclean/items')
