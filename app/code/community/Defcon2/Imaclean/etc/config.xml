@@ -9,7 +9,7 @@
 <config>
     <modules>
         <Defcon2_Imaclean>
-            <version>1.0.0</version>
+            <version>1.2.0</version>
         </Defcon2_Imaclean>
     </modules>
     <global>

@@ -18,7 +18,7 @@ class Defcon2_Imaclean_Helper_Data extends Mage_Core_Helper_Abstract {
             if ($dir = opendir($path)) {
                 while (($entry = readdir($dir)) !== false) {
                     if (preg_match('/^\./', $entry) != 1) {
-                        if (is_dir($path . DS . $entry) && !in_array($entry, array('cache', 'watermark'))) {
+                        if (is_dir($path . DS . $entry) && !in_array($entry, array('cache', 'watermark', 'placeholder'))) {
                             $this->listDirectories($path . DS . $entry);
                         } elseif (!in_array($entry, array('cache', 'watermark')) && (strpos($entry, '.') != 0)) {
                             $this->result[] = substr($path . DS . $entry, 21);
