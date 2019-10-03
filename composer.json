@@ -1,17 +1,5 @@
 {
-    "name": "OpenMageModuleFostering/Mage_Imaclean",
-    "type": "magento-module",
-    "license": "Open-Software-License-(OSL)",
-    "homepage": "",
-    "description": "This extension allows to list all the product images that already are not in use and to erase them.
-",
-    "authors": [
-    {
-        "name": "Manuel Canepa",
-        "email": "manuelcanepa@gmail.com"
-    }
-],
-    "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+    "keywords": [
+        "openmage-module"
+    ]
 }
